@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <form action="resultados.php" method="get">
+            <p>
+                <label>Asignatura</label>
+                <br/>
+                <input type="radio" name="asignatura" id="servidor" value="servidor"/>
+                <label for="servidor">Servidor</label>
+                <br/>
+                <input type="radio" name="asignatura" id="cliente" value="cliente"/>
+                <label for="cliente">Cliente</label>
+                <br/>
+                <input type="radio" name="asignatura" id="depsliegue" value="despliegue"/>
+                <label for="despliegue">Despliegue</label>
+            </p>
+            <p>
+                <label>Profesor</label>
+                <br/>
+                <input type="checkbox" name="profesor[]" id="isa" value="isa"/>
+                <label for="isa">Isa</label>
+                <br/>
+                <input type="checkbox" name="profesor[]" id="ernesto" value="ernesto"/>
+                <label for="ernesto">Ernesto</label>
+                <br/>
+                <input type="checkbox" name="profesor[]" id="alberto" value="alberto"/>
+                <label for="alberto">Alberto</label>
+            </p>
+            <p>
+                <label>Horas</label>
+                <br/>
+                <input type="text" name="horas"/>
+            </p>
+            <p>
+                <label>Información</label>
+                <br/>
+                <textarea name="info"></textarea>
+            </p>
+            <p>
+                <input type="submit"/>
+            </p>
+        </form>
+    </body>
+</html>
